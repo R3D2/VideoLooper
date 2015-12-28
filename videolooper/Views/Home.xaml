@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="VideoLooper.Views.Home"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:VideoLooper="clr-namespace:VideoLooper"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+      mc:Ignorable="d"
+      Height="512" Width="772">
+    <Grid>
+        <Label x:Name="lblHomeView" Content="Select the capture device..." FontSize="36" Margin="172,81,157,364" FontFamily="Segoe UI Symbol"/>
+        <Controls:Tile x:Name="tileWebcam"
+    		TiltFactor="2"
+    		Width="200" Height="200" 
+    		Count="Webcam" VerticalAlignment="Center" Margin="289,234,283,78" HorizontalAlignment="Center" FontFamily="Segoe UI Light"/>
+        <Controls:Tile x:Name="tileKinect"
+    		TiltFactor="1"
+    		Width="200" Height="200" 
+    		Count="Kinect" VerticalAlignment="Center" Margin="41,234,531,78" HorizontalAlignment="Center" FontFamily="Segoe UI Light" RenderTransformOrigin="0.5,0.5">
+            <Controls:Tile.LayoutTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="1"/>
+                </TransformGroup>
+            </Controls:Tile.LayoutTransform>
+        </Controls:Tile>
+        <Controls:Tile x:Name="tileHelp"
+    		TiltFactor="3"
+    		Width="200" Height="200" 
+    		Count="Help" VerticalAlignment="Center" Margin="533,234,39,78" HorizontalAlignment="Center" FontFamily="Segoe UI Light"/>
+    </Grid>
+</UserControl>

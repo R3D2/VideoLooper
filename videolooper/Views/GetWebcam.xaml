@@ -1,0 +1,14 @@
+﻿<UserControl x:Class="VideoLooper.Views.GetWebcam"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+             mc:Ignorable="d" 
+             RenderOptions.ClearTypeHint="Enabled"
+             d:DesignHeight="600" d:DesignWidth="900">
+    <Grid>
+        <Label x:Name="lblHomeView" Content="Please connect your webcam... " FontSize="36" Margin="204,423,205,88" FontFamily="Segoe UI Symbol" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Controls:ProgressRing IsActive="True" Height="Auto" Width="200" Margin="350,112,350,252" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+    </Grid>
+</UserControl>

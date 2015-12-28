@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="VideoLooper.Views.GetKinect"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:k="http://schemas.microsoft.com/kinect/2013"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             RenderOptions.ClearTypeHint="Enabled"
+             mc:Ignorable="d" Height="600" Width="900">
+    <Grid>
+        <Controls:ProgressRing IsActive="True" Height="Auto" Width="200" Margin="350,112,350,252" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <k:KinectSensorChooserUI Visibility="Hidden" x:Name="sensorChooserUi" Height="63" Width="78" Margin="404,474,418,63" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="lblHome" Content="Please connect your kinect... " FontSize="36" Margin="218,423,218,118" FontFamily="Segoe UI Symbol" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+    </Grid>
+</UserControl>

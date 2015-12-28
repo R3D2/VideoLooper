@@ -1,0 +1,26 @@
+﻿<UserControl x:Class="VideoLooper.Views.PrcKinect"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:k="http://schemas.microsoft.com/kinect/2013"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+             mc:Ignorable="d"
+             RenderOptions.ClearTypeHint="Enabled"
+             d:DesignHeight="600" d:DesignWidth="900">
+    <Grid>
+        <Image Name="kinectColorImage" Stretch="Fill" Visibility="Visible" Margin="0,0,226,0"/>
+        <Button x:Name="btnLoop" Content="Loop" HorizontalAlignment="Right" Width="226" Margin="0,310,0,0" FontSize="48"/>
+        <GroupBox x:Name="gbSequenceLength" Header="Loop Length" HorizontalAlignment="Right" Margin="0" VerticalAlignment="Top" Height="187" Width="226">
+            <Grid>
+                <RadioButton x:Name="rb3seconds" Content="3 Seconds" HorizontalAlignment="Left" Margin="30,4,0,0" VerticalAlignment="Top" Height="40" Width="158" FontSize="25" HorizontalContentAlignment="Center"/>
+                <RadioButton x:Name="rb5seconds" Content="5 Seconds" HorizontalAlignment="Left" Margin="30,51,0,0" VerticalAlignment="Top" Height="40" Width="158" FontSize="25" HorizontalContentAlignment="Center"/>
+                <RadioButton x:Name="rb10seconds" Content="10 Seconds" HorizontalAlignment="Left" Margin="30,99,0,0" VerticalAlignment="Top" Height="39" Width="158" FontSize="25" HorizontalContentAlignment="Center"/>
+                <Label x:Name="lblChrono" FontSize="120" Visibility="Hidden" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            </Grid>
+        </GroupBox >
+        <GroupBox HorizontalAlignment="Right" Margin="0,187,0,0" VerticalAlignment="Top" Height="123" Width="226" Header="Vocal Command">
+            <Label x:Name="lblVoiceCommand" Content="Speak !" Margin="-4,-6,-3,-5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Segoe UI Semibold" FontSize="48"/>
+        </GroupBox>
+    </Grid>
+</UserControl>

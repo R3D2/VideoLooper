@@ -1,0 +1,22 @@
+﻿<Controls:MetroWindow x:Class="VideoLooper.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:prop="clr-namespace:VideoLooper.Properties"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:Views="clr-namespace:VideoLooper.Views"
+        Title="VideoLooper V0.5"
+        Icon="video.looper.ico"
+        RenderOptions.ClearTypeHint="Enabled"
+        TextOptions.TextRenderingMode="ClearType"
+        GlowBrush="{DynamicResource AccentColorBrush}"
+        WindowStartupLocation="CenterScreen" Height="600" Width="900">
+    <Controls:MetroWindow.RightWindowCommands>
+        <Controls:WindowCommands>
+            <Button Content="Back" Click="Back_Click"/>
+        </Controls:WindowCommands>
+    </Controls:MetroWindow.RightWindowCommands>
+    <DockPanel>
+        <ContentControl x:Name="ContentArea" >
+        </ContentControl>
+    </DockPanel>
+</Controls:MetroWindow>

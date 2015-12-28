@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="VideoLooper.Views.Help"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="900">
+    <Grid>
+        <Label Content="1 - Connect a capture device to the PC." HorizontalAlignment="Left" Margin="41,36,0,0" VerticalAlignment="Top" Height="44" Width="691" FontSize="22"/>
+        <Label Content="2 - Select the type of capture device you have connected on the home screen." HorizontalAlignment="Left" Margin="41,80,0,0" VerticalAlignment="Top" Height="44" Width="812" FontSize="22"/>
+        <Label Content="Kinect" HorizontalAlignment="Left" Margin="41,124,0,0" VerticalAlignment="Top" Height="44" Width="131" FontSize="22" FontWeight="Bold"/>
+        <Label Content="3 - Use your voice to command the application. " HorizontalAlignment="Left" Margin="86,168,0,0" VerticalAlignment="Top" Height="44" Width="708" FontSize="22"/>
+        <Label Content="4 - Say &quot;Three&quot;, &quot;Five&quot; or &quot;Ten&quot; to set the length of the sequence." HorizontalAlignment="Left" Margin="86,212,0,0" VerticalAlignment="Top" Height="44" Width="708" FontSize="22"/>
+        <Label Content="5 - Once a length is selected, say &quot;Start&quot; to start the loop." HorizontalAlignment="Left" Margin="86,256,0,0" VerticalAlignment="Top" Height="44" Width="708" FontSize="22"/>
+        <Label Content="5 - Once you are done, say &quot;Stop&quot; to stop the loop." HorizontalAlignment="Left" Margin="86,300,0,0" VerticalAlignment="Top" Height="44" Width="708" FontSize="22"/>
+        <Label Content="6 - You can save the sequence." HorizontalAlignment="Left" Margin="86,344,0,0" VerticalAlignment="Top" Height="44" Width="708" FontSize="22"/>
+        <Label Content="* Additional commands : &quot;Fullscreen&quot;, set the application to fullscreen" HorizontalAlignment="Left" Margin="86,393,0,0" VerticalAlignment="Top" Height="44" Width="708" FontSize="22"/>
+        <Label Content="Webcam" HorizontalAlignment="Left" Margin="41,437,0,0" VerticalAlignment="Top" Height="44" Width="246" FontSize="22" FontWeight="Bold"/>
+        <Label Content="Follow the same process just by clicking to the commands." HorizontalAlignment="Left" Margin="86,481,0,0" VerticalAlignment="Top" Height="44" Width="691" FontSize="22"/>
+    </Grid>
+</UserControl>
